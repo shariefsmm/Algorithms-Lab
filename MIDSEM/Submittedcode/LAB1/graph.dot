@@ -1,0 +1,27 @@
+/* tree edge is green
+backedge is orange
+forward edge is red
+crossedge is blue
+unvisitededge is black
+*/
+digraph output{
+0 -> 6 [color=green];
+0 -> 3 [color=green];
+0 -> 1 [color=red];
+1 -> 2 [color=green];
+2 -> 5 [color=blue];
+2 -> 4 [color=blue];
+2 -> 3 [color=orange];
+3 -> 4 [color=blue];
+3 -> 1 [color=green];
+5 -> 4 [color=green];
+6 -> 7 [color=green];
+7 -> 5 [color=green];
+7 -> 0 [color=orange];
+8 -> 6 [color=blue];
+8 -> 5 [color=blue];
+8 -> 0 [color=blue];
+9 -> 3 [color=blue];
+9 -> 7 [color=blue];
+9 -> 8 [color=blue];
+}

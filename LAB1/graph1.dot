@@ -1,0 +1,40 @@
+/* tree edge is green
+backedge is orange
+forward edge is red
+crossedge is blue
+unvisitededge is black
+*/
+digraph output{
+0 -> 6 [color=green];
+6 -> 7 [color=green];
+7 -> 5 [color=green];
+5 -> 4 [color=green];
+7 -> 0 [color=orange];
+0 -> 3 [color=green];
+3 -> 4 [color=blue];
+3 -> 1 [color=green];
+1 -> 2 [color=green];
+2 -> 5 [color=blue];
+2 -> 4 [color=blue];
+2 -> 3 [color=orange];
+0 -> 1 [color=red];
+8 -> 6 ;
+8 -> 5 ;
+8 -> 0 ;
+9 -> 3 ;
+9 -> 7 ;
+9 -> 8 ;
+}
+/*
+vertex prettime posttime
+0 	 1 	 16
+1 	 11 	 14
+2 	 12 	 13
+3 	 10 	 15
+4 	 5 	 6
+5 	 4 	 7
+6 	 2 	 9
+7 	 3 	 8
+8 	 0 	 0
+9 	 0 	 0
+*/
